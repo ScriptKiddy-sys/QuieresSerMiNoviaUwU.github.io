@@ -1,0 +1,103 @@
+body, html{
+     -webkit-box-pack: normal;
+     height: 100vh;  
+}
+
+.font-roboto{
+     font-family: 'Roboto', sans-serif !important;
+}
+.font-rock{
+     font-family: 'Rock Salt', cursive !important;
+}
+.font-weight-medium{
+     font-weight: 350 !important;
+}
+
+.background-1, .background-2, .background-3, .background-4, .background-5, .background-6, .background-7{
+     background-repeat: no-repeat;     
+}
+
+.background-1{
+     background: url(./pattern.svg), -webkit-linear-gradient(145deg, #fb6f4a 0%, #fa3454 25%, #d253b1 100%);
+     background: url(./pattern.svg), linear-gradient(-45deg, #fb6f4a 0%, #fa3454 25%, #d253b1 100%);
+     background-position: center;
+}
+.background-2{
+     background: url(./pattern.svg), -webkit-gradient(linear, bottom top, bottom top, from(#a84abb), color-stop(47%, #d253b1), to(#fa3454));
+     background: url(./pattern.svg), -webkit-linear-gradient(top, #a84abb, #d253b1 47%, #fa3454);
+     background: url(./pattern.svg), linear-gradient(to top, #a84abb, #d253b1 47%, #fa3454);
+     background-position: left;
+}
+.background-3{
+     background: url(./pattern.svg), -webkit-gradient(linear, left bottom, left top, from(#531d77), to(#a84abb));
+     background: url(./pattern.svg), -webkit-linear-gradient(bottom, #531d77, #a84abb 100%);
+     background: url(./pattern.svg), linear-gradient(0deg, #531d77, #a84abb 100%);
+     background-position: right;
+}
+.background-4{
+     background: url(./pattern.svg), -webkit-gradient(linear, left bottom, left top, from(#00a9ff), to(#531d77));
+     background: url(./pattern.svg), -webkit-linear-gradient(bottom, #00a9ff, #531d77 100%);
+     background: url(./pattern.svg), linear-gradient(0deg, #00a9ff, #531d77 100%);
+     background-position: right;
+}
+.background-5{
+     background: url(./pattern.svg), -webkit-linear-gradient(145deg, #9adee6 0%, #00a9ff 25%, #0443a2 100%);
+     background: url(./pattern.svg), linear-gradient(-45deg, #9adee6 0%, #00a9ff 25%, #0443a2 100%);
+     background-position: 30% 10%;
+}
+.background-6{
+     background: url(./pattern.svg), -webkit-linear-gradient(345deg, #fa3454 0%, #d253b1 25%, #00a9ff 100%);
+     background: url(./pattern.svg), linear-gradient(0deg, #fa3454 0%, #d253b1 25%, #00a9ff 100%);
+     background-position: center;
+}
+.background-7{
+     background: url(./si.jpg), #fa3454;
+     background-size: contain;
+     background-position: center !important;
+     background-repeat: no-repeat;
+}
+
+
+
+.text-white{
+     color: #fff !important;
+}
+
+.text-medium{
+     font-size: 1.5rem;
+     font-weight: 500;
+}
+
+.text-big{
+     font-size: 4rem;
+     font-weight: 500;
+}
+.text-big-2{
+     font-size: 4rem;
+     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+     .background-1, .background-3, .background-5, .background-7{
+          background-repeat: no-repeat;
+          background-position: left;
+     }
+     .background-2, .background-4, .background-6{
+          background-repeat: no-repeat;
+          background-position: right;
+     }     
+
+     .text-medium{
+          font-size: 1.3rem;
+          font-weight: 500;
+     }
+     
+     .text-big{
+          font-size: 2.3rem;
+          font-weight: 700;
+     }
+     .text-big-2{
+          font-size: 3rem;
+          font-weight: bold;
+     }  
+}
